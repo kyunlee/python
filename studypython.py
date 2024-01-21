@@ -43,3 +43,10 @@ print(b)
 #객체의 자료형 알아내기
 #type(값)
 print(type(10))
+
+#몫과 나머지 함께 구하기
+b=divmod(5,2)
+print(b)
+
+quotient, remainder = divmod(5,2)
+print(quotient, remainder)
