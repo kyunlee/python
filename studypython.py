@@ -10,3 +10,7 @@ if a==10:
 else:
     print(a,'입니다.')
     
+#숫자 계산하기
+
+b=0
+print(b)
