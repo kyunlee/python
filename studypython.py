@@ -12,6 +12,7 @@ else:
     print(a,'입니다.')
     
 #숫자 계산하기 그리고 변수선언
+b=None
 b=0
 print(b)
 
