@@ -33,6 +33,7 @@ a = [1, 2, 3]
 a.insert(0,4)
 print(a)
 
+
 a = [1, 2, 3, 1, 2, 3]
 a.remove(3)   #값으로 삭제 
 print('remove',a)
@@ -40,6 +41,8 @@ print('remove',a)
 a = [1, 2, 3]
 a.pop()  #pop index로 삭제 값
 print('pop',a)
+
+#remove 와 pop의 차이?
 
 a = [1, 2, 3, 1]
 a.count(1)
