@@ -45,3 +45,4 @@ print( a[19:]) #You need Python
 print( a[:17]) #Life is too short
 print( a[:] )  #Life is too short, You need Python
 print( a[19:-7] ) #You need
+ 
