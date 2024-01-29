@@ -32,3 +32,21 @@ print(grade['pey'])
 # 딕셔너리에서 Key는 고유한 값! 중복으로 존재할 수 없음.
 
 # 딕셔너리 관련 함수
+# Key 리스트 만들기 - keys
+a = {'name': 'pey', 'phone': '010-9999-1234', 'birth': '1118'}
+print(a.keys()) 
+
+for k in a.keys():
+    print(k)
+
+# dict_keys 객체를 리스트로 변환
+print( list(a.keys()) ) # ['name', 'phone', 'birth']
+
+# Value 리스트 만들기 - values
+print( a.values() )
+
+# Key, Value 쌍 얻기 - items
+print( a.items() ) # dict_items([('name', 'pey'), ('phone', '010-9999-1234'), ('birth', '1118')])
+
+# Key:Value 쌍 모두 지우기 - clear
+print( a.clear() )
