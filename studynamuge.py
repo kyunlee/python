@@ -7,5 +7,28 @@
 
 dic = {'name':'pey', 'phone': '010-9999-1234', 'birth':'1118'}
 print(dic)
+print( dic['name'])
+print(dic['phone'])
+print(dic['birth'])
 
 # 딕셔너리 쌍 추가하기
+a = {1:'a'}
+a[2] = 'b'
+print(a)
+
+a['name']='pey'
+print(a)
+a[3] = [1,2,3]
+print(a)
+
+# 딕셔너리 요소 삭제하기
+del a[1]
+print(a)
+
+# 딕셔너리에서 Key를 사용해 Value 얻기
+grade = {'pey':10, 'julliest':99}
+print(grade['pey'])
+
+# 딕셔너리에서 Key는 고유한 값! 중복으로 존재할 수 없음.
+
+# 딕셔너리 관련 함수
