@@ -47,8 +47,8 @@ print(type(10))
 
 #몫과 나머지 함께 구하기
 b=divmod(5,2)
-print(b)
+print('b:',b) # b (2, 1)
 
 quotient, remainder = divmod(5,2)
-print(quotient, remainder) 
+print(quotient, remainder) #2 1
 
