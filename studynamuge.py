@@ -50,3 +50,14 @@ print( a.items() ) # dict_items([('name', 'pey'), ('phone', '010-9999-1234'), ('
 
 # Key:Value 쌍 모두 지우기 - clear
 print( a.clear() )
+
+# Key로 Value 얻기 -get
+a = {'name': 'pey', 'phone': '010-9999-1234', 'birth': '1118'}
+print(a.get('name'))
+print(a.get('nokey')) # None
+#print(a['nokey'])      # KeyError: 'nokey'
+print(a.get('nokey', 'foo'))
+
+# 해당 Key가 딕셔너리 안에 있는지 조사하기 - in
+print( 'name' in a )
+print( 'email' in a )
