@@ -56,3 +56,19 @@ print(a[1])
 print(a[:1])
 print(a[2:])
 print( a[:1]+ 'y' + a[2:] )
+
+#문자열 포매팅
+#숫자대입
+print("I eat %d apples." % 3)
+#문자열대입
+print("I eat %s apples." % "five")
+#숫자 값을 나타내는 변수로 대입
+number = 3
+print("I eat %d apples." %number)
+#2개 이상의 값 넣기
+number = 10
+day = "three"
+print("I eat %d apples. so I was sick for %s days." % (number,day))
+
+#포매팅 연산자 %d와 %를 같이 쓸 때는 %%를 쓴다
+print("Error is %d%%." % 98)
