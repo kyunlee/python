@@ -37,17 +37,58 @@ print("I ate {0} apples. so I was sick for {1} days." .format(number, day))
 print("I ate {number} apples. so I was sick for {day} days." .format(number=10, day=3))
 print("I ate {0} apples. so I was sick for {day} days." .format(10,day=3))
 
+#f 문자열 포매팅 
+#파이썬 3.6 버전부터는 f 문자열 포매팅 기능을 사용가능
+name = '홍길동'
+age = 30
+print(f'나의 이름은 {name}입니다. 나이는 {age}입니다.')
+
+#표현식이란 중괄호 안의 변수를 계산식과 함께 사용하는 것
+print(f'나는 내년이면 {age +1}살이 된다.')
+
+#딕셔너리는 f문자열 포매팅에서 사용가능
+d = {'name':'홍길동', 'age':30}
+print(f'나의 이름은 {d["name"]}입니다. 나이는 {d["age"]}입니다.')
+
 #왼쪽정렬
 print("{0:<10}" .format("hi"))
+print(f'{"hi":<10}')
+
 #:<10 표현식을 사용하면 치환되는 문자열을 왼쪽으로 정렬하고 문자열의 총 자릿수를 10으로 맞춤
+
 #오른쪽정렬
 print("{0:>10}".format("hi"))
+print(f'{"hi":>10}')
+
 #오른쪽 정렬은 :< 대신 :>을 사용하면 됨.
+#화살표의 방향을 생각하면 어느 쪽으로 정렬되는지 알수 있음.
 #가운데 정렬
 print("{0:^10}".format("hi"))
+print(f'{"hi":^10}')
+
 #출력결과
 '''
 hi
+hi
+        hi
         hi
     hi
+    hi
 '''
+
+#공백 채우기
+print("{0:=^10}" .format("hi")) #====hi====
+
+print("{0:!<10}" .format("hi")) #hi!!!!!!!!
+print("{0:!>10}" .format("hi")) #!!!!!!!!hi
+
+#소수점표현하기
+y=3.42134234
+print("{0:0.4f}" .format(y))
+print("{0:10.4f}".format(y))
+
+#{ 또는 } 문자 표현하기
+print("{{ and }}" .format())
+
+
+#문자열
