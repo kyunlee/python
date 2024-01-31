@@ -72,3 +72,9 @@ print("I eat %d apples. so I was sick for %s days." % (number,day))
 
 #포매팅 연산자 %d와 %를 같이 쓸 때는 %%를 쓴다
 print("Error is %d%%." % 98)
+
+#정렬과 공백
+print("%10s" % "hi")
+print("%-10sjane." %'hi')
+#hi를 왼쪽으로 정렬하고 나머지는 공백으로 채웠다는 것을 알 수 있다.
+
