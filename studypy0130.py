@@ -74,7 +74,39 @@ print("I eat %d apples. so I was sick for %s days." % (number,day))
 print("Error is %d%%." % 98)
 
 #정렬과 공백
-print("%10s" % "hi")
-print("%-10sjane." %'hi')
+print("%10s" % "hi")      #         hi
+print("%-10sjane." %'hi') #hi        jane.
 #hi를 왼쪽으로 정렬하고 나머지는 공백으로 채웠다는 것을 알 수 있다.
 
+#소수점 표현하기
+print("%0.4f" % 3.42134234)  #3.4213
+print("%10.4f" % 3.42134234) #    3.4213
+
+#format 함수를 사용한 포매팅
+print("I eat {0} apples." .format(3))
+print("I eat {0} apples".format("five"))
+
+number = 3
+print("I eat {0} apples" .format(number))
+
+number = 10
+day = "three"
+print("I ate {0} apples. so I was sick for {1} days." .format(number, day))
+
+print("I ate {number} apples. so I was sick for {day} days." .format(number=10, day=3))
+print("I ate {0} apples. so I was sick for {day} days." .format(10,day=3))
+
+#왼쪽정렬
+print("{0:<10}" .format("hi"))
+#:<10 표현식을 사용하면 치환되는 문자열을 왼쪽으로 정렬하고 문자열의 총 자릿수를 10으로 맞춤
+#오른쪽정렬
+print("{0:>10}".format("hi"))
+#오른쪽 정렬은 :< 대신 :>을 사용하면 됨.
+#가운데 정렬
+print("{0:^10}".format("hi"))
+#출력결과
+'''
+hi
+        hi
+    hi
+'''
