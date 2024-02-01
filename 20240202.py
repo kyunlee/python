@@ -10,3 +10,24 @@ b = False
 
 print(type(a))
 print(type(b))
+#type(x)는 x의 자료형을 확인하는 파이썬의 내장 함수
+
+print(1==1)
+print(2>1)
+print(2<1)
+
+a = [1,2,3,4]
+while a:
+    print(a.pop())
+
+'''
+while 조건문:
+    수행할_문장
+'''
+
+if []:
+    print("참")
+else:
+    print("거짓")
+
+print(bool('python'))
