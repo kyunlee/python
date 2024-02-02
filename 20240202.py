@@ -31,3 +31,42 @@ else:
     print("거짓")
 
 print(bool('python'))
+
+#변수란?
+a = [1, 2, 3]
+print(id(a)) #2424648489152
+b = a
+print(id(b)) #2424648489152
+
+print(a is b)  # a와 b가 가리키는 객체가 같을까?
+
+a[1] = 4
+print(a) #[1, 4, 3]
+print(b) #[1, 4, 3]
+
+a = [1, 2, 3]
+b = a[:]
+a[1] = 4
+print(a) #[1, 4, 3]
+print(b) #[1, 2, 3]
+print (b is a)
+
+from copy import copy
+a = [1,2,3]
+b = copy(a)
+print (b is a)
+b=a.copy()
+print(a is b)
+
+#변수를 만드는 여러가지 방법
+a, b = ('python','life')
+print(a,b)
+
+(c,d)= 'Python','life'
+print(c,d)
+
+[a,b] = ['python','life']
+print([a,b])
+
+a=b='veronica'
+print(a,b)
