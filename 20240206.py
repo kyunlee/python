@@ -50,3 +50,14 @@ while a < 10:
     a = a+1
     if a % 2 == 0: continue
     print(a)
+
+# 무한 루프
+'''
+while True:
+    수행할_문장1
+    수행할_문장2
+'''
+
+while True:
+    print("Ctrl+C를 눌러야 while문을 빠져나갈 수 있습니다.")
+    
