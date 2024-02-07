@@ -33,6 +33,7 @@ marks = [90,25,67,45,80]
 60점 이상인 사람에게는 축하 메시지를 보내고 나머지 사람에게는
 아무런 메시지도 전하지 않는 프로그램
 '''
+# marks2.py
 
 # for 문과 함께 자주 사용하는 range 함수
 a = range(10)
@@ -49,6 +50,8 @@ for i in range(1, 11):
     add = add + 1
 
 print(add)
+
+#marks3.py
 
 #for와 range를 이용한 구구단
 
