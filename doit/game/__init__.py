@@ -1,3 +1,5 @@
+# doit/game.__init_.py
+
 #패키지 내 모듈을 미리 import
 from .graphic.render import render_test
 
