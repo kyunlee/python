@@ -209,6 +209,7 @@ import os
 
 # 디렉터리 위치 변경하기 - os.chdir
 #os.chdir("D:\\python")
+#os.chdir("D:\\python")
 
 # 디렉터리 위치 돌려받기 - os.getcwd
 #print( os.getcwd() ) # D:\python\python-1
