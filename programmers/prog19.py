@@ -27,4 +27,23 @@ n = 11
 def solution(my_string, n):    
     return my_string[len(my_string)-n:]
 
-print(solution(my_string, n))
+#print(solution(my_string, n))
+
+# 9-4.접미사배열
+my_string="banana"
+
+def solution(my_string):
+    return  sorted([my_string[i:] for i in range(len(my_string))])
+
+
+#print(solution(my_string))
+
+#9-5. 접미사인지 확인하기
+
+my_string = "banana"
+is_suffix = "abanana"
+def solution(my_string, is_suffix):
+    return 1 if my_string[-len(is_suffix):] == is_suffix else 0
+
+print(solution(my_string, is_suffix))
+

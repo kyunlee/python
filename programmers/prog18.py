@@ -50,22 +50,73 @@ def solution(number):
 my_string = "rermgorpsam"
 queries = [[2, 3], [0, 7], [5, 9], [6, 10]]
 
-print(my_string[2:4][::])
-print(my_string[2:3+1][::-1])
+#print(my_string[2:4][::])
+#print(my_string[2:3+1][::-1])
 
 def solution(my_string, queries):
-    answer = ''
+    for i in queries:
+        first = my_string[:i[0]]    
+
+        if i[0] !=0:
+            center = my_string[i[1]:i[0]-1:-1]         
+        else:
+            center = my_string[i[1]::-1]      
+        end = my_string[i[1]+1:]
+
+        my_string = first + center + end
+    return my_string
+    print('my_string=',my_string)
+
+'''
+def solution(a, b, c, d):
+    nums = [a, b, c, d]
+    counts = [nums.count(i) for i in nums]
+    if max(counts) == 4:
+        return a * 1111
+    elif max(counts) == 3:
+        p = nums[counts.index(3)]
+        q = nums[counts.index(1)]
+        return (10 * p + q) ** 2
+    elif max(counts) == 2:
+        if min(counts) == 2:
+            return (a + c) * abs(a - c) if a == b else (a + b) * abs(a - b)
+        else:
+            p = nums[counts.index(2)]
+            return (a * b * c * d) / p**2
+    else:
+        return min(nums)
+[출처] #6. Python 기초 트레이닝(+근황?현황?)|작성자 meee
+'''
+'''
+주사위게임3
+'''
+a = 2
+b = 5
+c = 2
+d = 6
+
+def solution(a, b, c, d):
+    nums = [a,b,c,d]
+    counts = [nums.count(i) for i in nums]  
+    answer = 0
+    print( counts )
+    if max(counts) == 4:
+        answer = 1111*a
+    elif max(counts) == 3:
+        p = nums[counts.index(3)]
+        q = nums[counts.index(1)]
+        answer = (10*p+q)**2
+    elif max(counts) == 2:
+        if min(counts) == 2: 
+            if a == b:
+                answer = (a+c)*abs(a-c) 
+            else: answer = (a+b)*abs(a-b)
+        else:
+            p = nums[counts.index(2)]
+            answer = (a*b*c*d)/p**2
+    else:
+        answer = min(nums)
     return answer
 
-for i in queries:
-    first = my_string[:i[0]]    
+print(solution(a, b, c, d))
 
-    if i[0] !=0:
-        center = my_string[i[1]:i[0]-1:-1]         
-    else:
-        center = my_string[i[1]::-1]      
-    end = my_string[i[1]+1:]
-
-    my_string = first + center + end
-
-    print('my_string=',my_string)
