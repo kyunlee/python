@@ -35,6 +35,17 @@ def solution(my_string):
 #print(solution(my_string3))
 
 # 소인수분해
+n = 420
+
 def solution(n):
+    i = 2
     answer = []
-    return answer
+    while i <= n:
+        if n % i == 0:
+            answer.append(i)
+            n= n/i
+        else:
+            i += 1
+    return sorted(list(set(answer)))
+
+print(solution(n))
