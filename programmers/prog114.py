@@ -53,10 +53,9 @@ arr = [0, 1, 2, 3, 4]
 queries = [[0, 1],[1, 2],[2, 3]]
 
 def solution(arr, queries):
-    for i in queries:
-        for j in i:
-            print(j)
-            arr[j] +=1
-    return arr
-
+    for i in queries:       
+        for j in range(i[0],i[1]+1):
+            if i[0] <= j <= i[1]: 
+                arr[j] +=1
+    return arr  
 print(solution(arr, queries))
