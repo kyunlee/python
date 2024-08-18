@@ -54,4 +54,29 @@ def solution(rank, attendance):
             answer.append(0)
     return answer
 
-print(solution(rank, attendance))
+#print(solution(rank, attendance))
+
+myString='abcdevwxyz'
+
+def solution(myString):
+    for i in myString:
+        if ord(i) < ord('l'):
+            myString = myString.replace(i,"l")
+    return myString
+
+#print(solution(myString))
+
+
+order = ["cafelatte", "americanoice", "hotcafelatte", "anything"]
+def solution(order):
+    answer = 0
+    for i in order:
+        if "americano" in i :
+            answer += 4500
+        elif "cafelatte" in i:
+            answer += 5000
+        elif "anythin" in i:
+            answer += 4500
+    return answer
+
+#print(solution(order))
